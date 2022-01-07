@@ -19,7 +19,7 @@ services:
       - 3000:3000
     volumes:
       - ./api:/api
-      - bundle_cache:/bundle_cache
+      # - bundle_cache:/bundle_cache
     cpu_quota: 50000
     cpuset: "1"
   db:
@@ -35,5 +35,5 @@ services:
       POSTGRES_PASSWORD: postgres
 
 volumes:
-  bundle_cache:
+  # bundle_cache:
   dbdata:

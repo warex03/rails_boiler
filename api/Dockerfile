@@ -1,4 +1,4 @@
-FROM ruby:3.0.0
+FROM ruby:3.0.3
 
 # Install system dependencies
 RUN apt-get update -qq --fix-missing
