@@ -1,6 +1,9 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  host: db
+  username: postgres
+  password: postgres
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -8,9 +11,6 @@ default: &default
 development:
   <<: *default
   database: app_dev
-  host: db
-  username: postgres
-  password: postgres
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
