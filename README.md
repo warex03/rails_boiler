@@ -59,6 +59,8 @@ https://stackoverflow.com/questions/60579293/how-are-cookie-http-only-sessions-s
 # backend auth
 https://www.thegreatcodeadventure.com/jwt-storage-in-rails-the-right-way/
 https://3rd-edition.railstutorial.org/book/modeling_users
+
+https://danielabaron.me/blog/dockerize-rails-app-for-dev-debug-and-testing/
 ```
 
 
@@ -68,13 +70,17 @@ https://3rd-edition.railstutorial.org/book/modeling_users
 
 # TODOS
 
-- make test cases for user validation
+- convert all ids to uuid
+- deploy to gigalixir/heroku and netlify
+- update cors with the domain of FE when deployed to netlify
 - remove unneeded deps on package.json
 - add Makefile?
 - setup rubocop
 - setup js linter
 - setup graphql backend w/ graphiql
 - authorization
+- setup react router in FE
 
 # Nice to haves
 - google/fb auth
+- make test cases for user validation

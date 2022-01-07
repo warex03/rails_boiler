@@ -1,5 +1,6 @@
 module Api
   class SessionsController < ApplicationController
+    skip_before_action :authenticate_user, only: :create
 
     def create
       user_hash = User.authenticate(params[:email], params[:password])
@@ -15,6 +16,9 @@ module Api
         render status: 404,
                json: {error: 'Username or password incorrect'}
       end
+    end
+
+    def get_current_user
     end
 
     def destroy
