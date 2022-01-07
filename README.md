@@ -7,6 +7,13 @@
 - install docker
 - docker-compose up
 
+# Setup
+
+- Prepare the database
+```
+bundle exec rails db:setup
+```
+
 # Learning dump
 
 - Install asdf for initializing ruby project
@@ -40,8 +47,34 @@ https://stackoverflow.com/a/53615194
 
 # proxy
 https://create-react-app.dev/docs/proxying-api-requests-in-development/
+
+
+# cookies
+https://stackoverflow.com/questions/60579293/how-are-cookie-http-only-sessions-supposed-to-work-on-a-spa-with-a-separate-api
 ```
+
+# Guides used
+
+```
+# backend auth
+https://www.thegreatcodeadventure.com/jwt-storage-in-rails-the-right-way/
+https://3rd-edition.railstutorial.org/book/modeling_users
+```
+
+
+# Adding gems
+
+# Adding npm packages
 
 # TODOS
 
+- make test cases for user validation
 - remove unneeded deps on package.json
+- add Makefile?
+- setup rubocop
+- setup js linter
+- setup graphql backend w/ graphiql
+- authorization
+
+# Nice to haves
+- google/fb auth
